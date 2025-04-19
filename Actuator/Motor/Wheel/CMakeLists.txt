@@ -12,6 +12,9 @@ set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 set(CMAKE_C_EXTENSIONS ON)
 
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_STANDARD 17)
+
 
 # Define the build type
 if(NOT CMAKE_BUILD_TYPE)
@@ -27,12 +30,12 @@ include("cmake/gcc-arm-none-eabi.cmake")
 # Enable compile command to ease indexing with e.g. clangd
 set(CMAKE_EXPORT_COMPILE_COMMANDS TRUE)
 
-# Enable CMake support for ASM and C languages
-enable_language(C ASM)
-
 # Core project settings
 project(${CMAKE_PROJECT_NAME})
 message("Build type: " ${CMAKE_BUILD_TYPE})
+
+# Enable CMake support for ASM and C languages
+enable_language(C ASM CXX)
 
 # Create an executable object type
 add_executable(${CMAKE_PROJECT_NAME})
@@ -48,11 +51,31 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
 # Add sources to executable
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user sources here
+    User/Controller/Src/foc.cpp
+    User/Devices/Src/current.cpp
+    User/Devices/Src/driver.cpp
+    User/Devices/Src/encoder.cpp
+    User/Devices/Src/temperature.cpp
+    User/Boards/stm32g4/stm32g4Board.cpp
+    User/Application/Src/user.cpp
+    User/Shell/Src/shell.c
+    User/Shell/Src/shell_ext.c
+    User/Shell/Src/shell_companion.c
+    User/Shell/Src/shell_cmd_list.c
+    User/Shell/Src/shell_port.c
+    User/Shell/Src/log.c
+    User/Application/Src/utilities.cpp
+    
 )
 
 # Add include paths
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined include paths
+    User/Application/Inc
+    User/Boards/stm32g4
+    User/Controller/Inc
+    User/Devices/Inc
+    User/Shell/Inc
 )
 
 # Add project symbols (macros)

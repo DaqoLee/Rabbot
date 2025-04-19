@@ -1,0 +1,224 @@
+[
+{
+  "directory": "F:/Studio/Project/Rabbot/Actuator/Motor/Wheel",
+  "command": "D:\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Core/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Middlewares/ST/ARM/DSP/Inc  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o CMakeFiles\\Wheel.dir\\Core\\Src\\main.c.obj -c F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Core\\Src\\main.c",
+  "file": "F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Core\\Src\\main.c",
+  "output": "CMakeFiles\\Wheel.dir\\Core\\Src\\main.c.obj"
+},
+{
+  "directory": "F:/Studio/Project/Rabbot/Actuator/Motor/Wheel",
+  "command": "D:\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Core/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Middlewares/ST/ARM/DSP/Inc  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o CMakeFiles\\Wheel.dir\\Core\\Src\\gpio.c.obj -c F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Core\\Src\\gpio.c",
+  "file": "F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Core\\Src\\gpio.c",
+  "output": "CMakeFiles\\Wheel.dir\\Core\\Src\\gpio.c.obj"
+},
+{
+  "directory": "F:/Studio/Project/Rabbot/Actuator/Motor/Wheel",
+  "command": "D:\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Core/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Middlewares/ST/ARM/DSP/Inc  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o CMakeFiles\\Wheel.dir\\Core\\Src\\adc.c.obj -c F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Core\\Src\\adc.c",
+  "file": "F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Core\\Src\\adc.c",
+  "output": "CMakeFiles\\Wheel.dir\\Core\\Src\\adc.c.obj"
+},
+{
+  "directory": "F:/Studio/Project/Rabbot/Actuator/Motor/Wheel",
+  "command": "D:\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Core/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Middlewares/ST/ARM/DSP/Inc  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o CMakeFiles\\Wheel.dir\\Core\\Src\\dma.c.obj -c F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Core\\Src\\dma.c",
+  "file": "F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Core\\Src\\dma.c",
+  "output": "CMakeFiles\\Wheel.dir\\Core\\Src\\dma.c.obj"
+},
+{
+  "directory": "F:/Studio/Project/Rabbot/Actuator/Motor/Wheel",
+  "command": "D:\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Core/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Middlewares/ST/ARM/DSP/Inc  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o CMakeFiles\\Wheel.dir\\Core\\Src\\fdcan.c.obj -c F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Core\\Src\\fdcan.c",
+  "file": "F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Core\\Src\\fdcan.c",
+  "output": "CMakeFiles\\Wheel.dir\\Core\\Src\\fdcan.c.obj"
+},
+{
+  "directory": "F:/Studio/Project/Rabbot/Actuator/Motor/Wheel",
+  "command": "D:\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Core/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Middlewares/ST/ARM/DSP/Inc  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o CMakeFiles\\Wheel.dir\\Core\\Src\\spi.c.obj -c F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Core\\Src\\spi.c",
+  "file": "F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Core\\Src\\spi.c",
+  "output": "CMakeFiles\\Wheel.dir\\Core\\Src\\spi.c.obj"
+},
+{
+  "directory": "F:/Studio/Project/Rabbot/Actuator/Motor/Wheel",
+  "command": "D:\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Core/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Middlewares/ST/ARM/DSP/Inc  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o CMakeFiles\\Wheel.dir\\Core\\Src\\tim.c.obj -c F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Core\\Src\\tim.c",
+  "file": "F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Core\\Src\\tim.c",
+  "output": "CMakeFiles\\Wheel.dir\\Core\\Src\\tim.c.obj"
+},
+{
+  "directory": "F:/Studio/Project/Rabbot/Actuator/Motor/Wheel",
+  "command": "D:\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Core/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Middlewares/ST/ARM/DSP/Inc  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o CMakeFiles\\Wheel.dir\\Core\\Src\\usart.c.obj -c F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Core\\Src\\usart.c",
+  "file": "F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Core\\Src\\usart.c",
+  "output": "CMakeFiles\\Wheel.dir\\Core\\Src\\usart.c.obj"
+},
+{
+  "directory": "F:/Studio/Project/Rabbot/Actuator/Motor/Wheel",
+  "command": "D:\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Core/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Middlewares/ST/ARM/DSP/Inc  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o CMakeFiles\\Wheel.dir\\Core\\Src\\stm32g4xx_it.c.obj -c F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Core\\Src\\stm32g4xx_it.c",
+  "file": "F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Core\\Src\\stm32g4xx_it.c",
+  "output": "CMakeFiles\\Wheel.dir\\Core\\Src\\stm32g4xx_it.c.obj"
+},
+{
+  "directory": "F:/Studio/Project/Rabbot/Actuator/Motor/Wheel",
+  "command": "D:\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Core/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Middlewares/ST/ARM/DSP/Inc  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o CMakeFiles\\Wheel.dir\\Core\\Src\\stm32g4xx_hal_msp.c.obj -c F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Core\\Src\\stm32g4xx_hal_msp.c",
+  "file": "F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Core\\Src\\stm32g4xx_hal_msp.c",
+  "output": "CMakeFiles\\Wheel.dir\\Core\\Src\\stm32g4xx_hal_msp.c.obj"
+},
+{
+  "directory": "F:/Studio/Project/Rabbot/Actuator/Motor/Wheel",
+  "command": "D:\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Core/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Middlewares/ST/ARM/DSP/Inc  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o CMakeFiles\\Wheel.dir\\Core\\Src\\sysmem.c.obj -c F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Core\\Src\\sysmem.c",
+  "file": "F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Core\\Src\\sysmem.c",
+  "output": "CMakeFiles\\Wheel.dir\\Core\\Src\\sysmem.c.obj"
+},
+{
+  "directory": "F:/Studio/Project/Rabbot/Actuator/Motor/Wheel",
+  "command": "D:\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Core/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Middlewares/ST/ARM/DSP/Inc  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o CMakeFiles\\Wheel.dir\\Core\\Src\\syscalls.c.obj -c F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Core\\Src\\syscalls.c",
+  "file": "F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Core\\Src\\syscalls.c",
+  "output": "CMakeFiles\\Wheel.dir\\Core\\Src\\syscalls.c.obj"
+},
+{
+  "directory": "F:/Studio/Project/Rabbot/Actuator/Motor/Wheel",
+  "command": "D:\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Core/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Middlewares/ST/ARM/DSP/Inc  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -x assembler-with-cpp -MMD -MP -g -o CMakeFiles\\Wheel.dir\\startup_stm32g431xx.s.obj -c F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\startup_stm32g431xx.s",
+  "file": "F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\startup_stm32g431xx.s",
+  "output": "CMakeFiles\\Wheel.dir\\startup_stm32g431xx.s.obj"
+},
+{
+  "directory": "F:/Studio/Project/Rabbot/Actuator/Motor/Wheel",
+  "command": "D:\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Core/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Middlewares/ST/ARM/DSP/Inc  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Core\\Src\\system_stm32g4xx.c.obj -c F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Core\\Src\\system_stm32g4xx.c",
+  "file": "F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Core\\Src\\system_stm32g4xx.c",
+  "output": "cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Core\\Src\\system_stm32g4xx.c.obj"
+},
+{
+  "directory": "F:/Studio/Project/Rabbot/Actuator/Motor/Wheel",
+  "command": "D:\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Core/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Middlewares/ST/ARM/DSP/Inc  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_adc.c.obj -c F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_adc.c",
+  "file": "F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_adc.c",
+  "output": "cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_adc.c.obj"
+},
+{
+  "directory": "F:/Studio/Project/Rabbot/Actuator/Motor/Wheel",
+  "command": "D:\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Core/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Middlewares/ST/ARM/DSP/Inc  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_adc_ex.c.obj -c F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_adc_ex.c",
+  "file": "F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_adc_ex.c",
+  "output": "cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_adc_ex.c.obj"
+},
+{
+  "directory": "F:/Studio/Project/Rabbot/Actuator/Motor/Wheel",
+  "command": "D:\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Core/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Middlewares/ST/ARM/DSP/Inc  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_ll_adc.c.obj -c F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_ll_adc.c",
+  "file": "F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_ll_adc.c",
+  "output": "cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_ll_adc.c.obj"
+},
+{
+  "directory": "F:/Studio/Project/Rabbot/Actuator/Motor/Wheel",
+  "command": "D:\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Core/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Middlewares/ST/ARM/DSP/Inc  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal.c.obj -c F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal.c",
+  "file": "F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal.c",
+  "output": "cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal.c.obj"
+},
+{
+  "directory": "F:/Studio/Project/Rabbot/Actuator/Motor/Wheel",
+  "command": "D:\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Core/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Middlewares/ST/ARM/DSP/Inc  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_rcc.c.obj -c F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_rcc.c",
+  "file": "F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_rcc.c",
+  "output": "cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_rcc.c.obj"
+},
+{
+  "directory": "F:/Studio/Project/Rabbot/Actuator/Motor/Wheel",
+  "command": "D:\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Core/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Middlewares/ST/ARM/DSP/Inc  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_rcc_ex.c.obj -c F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_rcc_ex.c",
+  "file": "F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_rcc_ex.c",
+  "output": "cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_rcc_ex.c.obj"
+},
+{
+  "directory": "F:/Studio/Project/Rabbot/Actuator/Motor/Wheel",
+  "command": "D:\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Core/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Middlewares/ST/ARM/DSP/Inc  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_flash.c.obj -c F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_flash.c",
+  "file": "F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_flash.c",
+  "output": "cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_flash.c.obj"
+},
+{
+  "directory": "F:/Studio/Project/Rabbot/Actuator/Motor/Wheel",
+  "command": "D:\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Core/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Middlewares/ST/ARM/DSP/Inc  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_flash_ex.c.obj -c F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_flash_ex.c",
+  "file": "F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_flash_ex.c",
+  "output": "cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_flash_ex.c.obj"
+},
+{
+  "directory": "F:/Studio/Project/Rabbot/Actuator/Motor/Wheel",
+  "command": "D:\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Core/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Middlewares/ST/ARM/DSP/Inc  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_flash_ramfunc.c.obj -c F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_flash_ramfunc.c",
+  "file": "F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_flash_ramfunc.c",
+  "output": "cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_flash_ramfunc.c.obj"
+},
+{
+  "directory": "F:/Studio/Project/Rabbot/Actuator/Motor/Wheel",
+  "command": "D:\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Core/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Middlewares/ST/ARM/DSP/Inc  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_gpio.c.obj -c F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_gpio.c",
+  "file": "F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_gpio.c",
+  "output": "cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_gpio.c.obj"
+},
+{
+  "directory": "F:/Studio/Project/Rabbot/Actuator/Motor/Wheel",
+  "command": "D:\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Core/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Middlewares/ST/ARM/DSP/Inc  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_exti.c.obj -c F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_exti.c",
+  "file": "F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_exti.c",
+  "output": "cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_exti.c.obj"
+},
+{
+  "directory": "F:/Studio/Project/Rabbot/Actuator/Motor/Wheel",
+  "command": "D:\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Core/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Middlewares/ST/ARM/DSP/Inc  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_dma.c.obj -c F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_dma.c",
+  "file": "F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_dma.c",
+  "output": "cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_dma.c.obj"
+},
+{
+  "directory": "F:/Studio/Project/Rabbot/Actuator/Motor/Wheel",
+  "command": "D:\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Core/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Middlewares/ST/ARM/DSP/Inc  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_dma_ex.c.obj -c F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_dma_ex.c",
+  "file": "F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_dma_ex.c",
+  "output": "cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_dma_ex.c.obj"
+},
+{
+  "directory": "F:/Studio/Project/Rabbot/Actuator/Motor/Wheel",
+  "command": "D:\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Core/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Middlewares/ST/ARM/DSP/Inc  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_pwr.c.obj -c F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_pwr.c",
+  "file": "F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_pwr.c",
+  "output": "cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_pwr.c.obj"
+},
+{
+  "directory": "F:/Studio/Project/Rabbot/Actuator/Motor/Wheel",
+  "command": "D:\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Core/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Middlewares/ST/ARM/DSP/Inc  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_pwr_ex.c.obj -c F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_pwr_ex.c",
+  "file": "F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_pwr_ex.c",
+  "output": "cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_pwr_ex.c.obj"
+},
+{
+  "directory": "F:/Studio/Project/Rabbot/Actuator/Motor/Wheel",
+  "command": "D:\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Core/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Middlewares/ST/ARM/DSP/Inc  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_cortex.c.obj -c F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_cortex.c",
+  "file": "F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_cortex.c",
+  "output": "cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_cortex.c.obj"
+},
+{
+  "directory": "F:/Studio/Project/Rabbot/Actuator/Motor/Wheel",
+  "command": "D:\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Core/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Middlewares/ST/ARM/DSP/Inc  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_fdcan.c.obj -c F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_fdcan.c",
+  "file": "F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_fdcan.c",
+  "output": "cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_fdcan.c.obj"
+},
+{
+  "directory": "F:/Studio/Project/Rabbot/Actuator/Motor/Wheel",
+  "command": "D:\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Core/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Middlewares/ST/ARM/DSP/Inc  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_spi.c.obj -c F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_spi.c",
+  "file": "F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_spi.c",
+  "output": "cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_spi.c.obj"
+},
+{
+  "directory": "F:/Studio/Project/Rabbot/Actuator/Motor/Wheel",
+  "command": "D:\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Core/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Middlewares/ST/ARM/DSP/Inc  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_spi_ex.c.obj -c F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_spi_ex.c",
+  "file": "F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_spi_ex.c",
+  "output": "cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_spi_ex.c.obj"
+},
+{
+  "directory": "F:/Studio/Project/Rabbot/Actuator/Motor/Wheel",
+  "command": "D:\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Core/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Middlewares/ST/ARM/DSP/Inc  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_tim.c.obj -c F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_tim.c",
+  "file": "F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_tim.c",
+  "output": "cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_tim.c.obj"
+},
+{
+  "directory": "F:/Studio/Project/Rabbot/Actuator/Motor/Wheel",
+  "command": "D:\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Core/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Middlewares/ST/ARM/DSP/Inc  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_tim_ex.c.obj -c F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_tim_ex.c",
+  "file": "F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_tim_ex.c",
+  "output": "cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_tim_ex.c.obj"
+},
+{
+  "directory": "F:/Studio/Project/Rabbot/Actuator/Motor/Wheel",
+  "command": "D:\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Core/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Middlewares/ST/ARM/DSP/Inc  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_uart.c.obj -c F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_uart.c",
+  "file": "F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_uart.c",
+  "output": "cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_uart.c.obj"
+},
+{
+  "directory": "F:/Studio/Project/Rabbot/Actuator/Motor/Wheel",
+  "command": "D:\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Core/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Drivers/CMSIS/Include -IF:/Studio/Project/Rabbot/Actuator/Motor/Wheel/Middlewares/ST/ARM/DSP/Inc  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_uart_ex.c.obj -c F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_uart_ex.c",
+  "file": "F:\\Studio\\Project\\Rabbot\\Actuator\\Motor\\Wheel\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_uart_ex.c",
+  "output": "cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Drivers\\STM32G4xx_HAL_Driver\\Src\\stm32g4xx_hal_uart_ex.c.obj"
+}
+]

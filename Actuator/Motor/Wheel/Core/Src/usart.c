@@ -22,6 +22,49 @@
 
 /* USER CODE BEGIN 0 */
 
+#include <stdio.h>
+// int fputc(int c, FILE *stream)
+// {
+//   uint8_t ch[] = {(uint8_t)c};
+//   HAL_UART_Transmit(&huart1, ch, 1, HAL_MAX_DELAY);
+//   return c;
+// }
+
+// #if 1
+// #pragma import(__use_no_semihosting)             
+// //��׼����Ҫ��֧�ֺ���                 
+// struct __FILE 
+// { 
+// 	int handle; 
+// }; 
+
+// FILE __stdout;       
+// //����_sys_exit()�Ա���ʹ�ð�����ģʽ    
+// void _sys_exit(int x) 
+// { 
+// 	x = x; 
+// } 
+// //�ض���fputc���� 
+// int fputc(int ch, FILE *f)
+// { 	
+// 	while((USART1->ISR&0X40)==0);//ѭ������,ֱ���������   
+// 	USART1->TDR = (uint8_t)ch;     
+// 	return ch;
+// }
+// #endif 
+
+#ifdef __GNUC__									//�����ض���
+#define PUTCHAR_PROTOTYPE int __io_putchar(int ch)
+#else
+#define PUTCHAR_PROTOTYPE int fputc(int ch, FILE *f)
+#endif 
+PUTCHAR_PROTOTYPE
+{
+    HAL_UART_Transmit(&huart1 , (uint8_t *)&ch, 1, 0xFFFF);
+    return ch;
+}
+
+
 /* USER CODE END 0 */
 
 UART_HandleTypeDef huart1;
@@ -106,6 +149,9 @@ void HAL_UART_MspInit(UART_HandleTypeDef* uartHandle)
     GPIO_InitStruct.Alternate = GPIO_AF7_USART1;
     HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
+    /* USART1 interrupt Init */
+    HAL_NVIC_SetPriority(USART1_IRQn, 0, 0);
+    HAL_NVIC_EnableIRQ(USART1_IRQn);
   /* USER CODE BEGIN USART1_MspInit 1 */
 
   /* USER CODE END USART1_MspInit 1 */
@@ -129,6 +175,8 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle)
     */
     HAL_GPIO_DeInit(GPIOB, GPIO_PIN_6|GPIO_PIN_7);
 
+    /* USART1 interrupt Deinit */
+    HAL_NVIC_DisableIRQ(USART1_IRQn);
   /* USER CODE BEGIN USART1_MspDeInit 1 */
 
   /* USER CODE END USART1_MspDeInit 1 */

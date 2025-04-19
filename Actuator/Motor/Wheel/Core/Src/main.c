@@ -28,7 +28,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "stdio.h"
+#include "user.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -60,7 +61,11 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
+  if (htim->Instance == TIM2) {  // 假设使用TIM2作为控制周期定时器
+    loop();
+  }
+}
 /* USER CODE END 0 */
 
 /**
@@ -101,6 +106,16 @@ int main(void)
   MX_SPI1_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
+  HAL_ADCEx_InjectedStart(&hadc1);
+	__HAL_ADC_ENABLE_IT(&hadc1, ADC_IT_JEOC);
+  HAL_Delay(1000);
+  HAL_ADCEx_Calibration_Start(&hadc1, ADC_SINGLE_ENDED);//校准
+ 
+
+  setup();
+
+  HAL_TIM_Base_Start_IT(&htim2);
+
 
   /* USER CODE END 2 */
 
@@ -108,6 +123,12 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+
+
+    // loop();
+    HAL_Delay(10);
+    // printf("test\r\n");
+    //HAL_UART_Transmit(&huart1, data, 3, 100);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
