@@ -16,7 +16,7 @@
 **
 **  Target      : STMicroelectronics STM32
 **
-**  Distribution: The file is distributed “as is,�? without any warranty
+**  Distribution: The file is distributed 鈥渁s is,锟�? without any warranty
 **                of any kind.
 **
 *****************************************************************************
@@ -101,12 +101,17 @@ SECTIONS
     *(.rodata*)        /* .rodata* sections (constants, strings, etc.) */
     . = ALIGN(4);
 
-    _shell_command_start = .;
-    KEEP (*(shellCommand))
-    _shell_command_end = .;
-    /* . = ALIGN(4); */
-
   } >FLASH
+
+  .shell_text : 
+  {
+    . = ALIGN(4);
+    _shell_command_start = .;
+    KEEP (*(.shellCommand))
+    _shell_command_end = .;
+    . = ALIGN(4);
+  } >FLASH
+  
 
   .ARM.extab (READONLY) : /* The "READONLY" keyword is only supported in GCC11 and later, remove it if using GCC10 or earlier. */
   {

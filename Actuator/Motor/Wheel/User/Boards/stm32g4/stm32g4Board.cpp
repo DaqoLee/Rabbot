@@ -146,3 +146,93 @@ void MT6835::update(uint32_t frequency)
 }
 
 
+
+void Current::init()
+{
+ // HAL_ADCEx_InjectedStart_IT(&hadc1);
+  HAL_ADCEx_InjectedStart(&hadc1);
+	// __HAL_ADC_ENABLE_IT(&hadc1, ADC_IT_JEOC);
+  HAL_Delay(100);
+  HAL_ADCEx_Calibration_Start(&hadc1, ADC_SINGLE_ENDED);//У׼
+ 
+}
+void Current::getCurrent(float *Ia, float *Ib, float *Ic) 
+{
+  *Ia = _Ia;
+  *Ib = _Ib;
+  *Ic = _Ic;
+}
+
+float Current::getIa(void)
+{
+  return _Ia;
+}
+float Current::getIb(void)
+{
+  return _Ib;
+}
+float Current::getIc(void)
+{
+  return _Ic;
+}
+
+#define ALPHA 0.1f  
+//float filtered_value = 0;
+float low_pass_filter(float new_sample, float last_sample) {
+ // float filtered_value = ALPHA * new_sample + (1 - ALPHA) * last_sample;
+  return ALPHA * new_sample + (1 - ALPHA) * last_sample;;
+}
+
+float iaBuf[20];
+float ibBuf[20];
+float icBuf[20];
+
+void Current::update(uint32_t frequency) 
+{
+  static uint8_t i = 0;
+  static float tempIa = 0.0f, tempIb = 0.0f, tempIc = 0.0f;
+ // static float last_tempIa = 0.0f, last_tempIb = 0.0f, last_tempIc = 0.0f;
+  tempIa = HAL_ADCEx_InjectedGetValue(&hadc1,ADC_INJECTED_RANK_1);
+  tempIb = HAL_ADCEx_InjectedGetValue(&hadc1,ADC_INJECTED_RANK_2);
+  tempIc = HAL_ADCEx_InjectedGetValue(&hadc1,ADC_INJECTED_RANK_3);
+
+  tempIa = ((tempIa * 3.0f / 4095.0f) - 1.5f) / 2.0f + 0.026f;
+  tempIb = ((tempIb * 3.0f / 4095.0f) - 1.5f) / 2.0f + 0.026f;
+  tempIc = ((tempIc * 3.0f / 4095.0f) - 1.5f) / 2.0f + 0.026f; 
+
+  iaBuf[i] = tempIa;
+  ibBuf[i] = tempIb;
+  icBuf[i] = tempIc;
+
+  tempIa = 0;
+  tempIb = 0;
+  tempIc = 0;
+
+  for (int j = 0; j < 20; j++)
+  {
+    tempIa += iaBuf[j];
+    tempIb += ibBuf[j];
+    tempIc += icBuf[j];
+  }
+
+  tempIa = tempIa/20;
+  tempIb = tempIb/20;
+  tempIc = tempIc/20;
+
+  
+  if (i > 19 )
+  {
+    i = 0;
+  }
+  else
+  {
+    i++;
+  }
+  
+  _Ia = low_pass_filter(tempIa, _Ia);
+  _Ib = low_pass_filter(tempIb, _Ib);
+  _Ic = low_pass_filter(tempIc, _Ic);
+
+  
+}
+

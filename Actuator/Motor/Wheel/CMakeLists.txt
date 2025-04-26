@@ -65,6 +65,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     User/Shell/Src/shell_port.c
     User/Shell/Src/log.c
     User/Application/Src/utilities.cpp
+    User/Algorithm/PID/src/PID.cpp
     
 )
 
@@ -76,6 +77,7 @@ target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     User/Controller/Inc
     User/Devices/Inc
     User/Shell/Inc
+    User/Algorithm/PID/src
 )
 
 # Add project symbols (macros)

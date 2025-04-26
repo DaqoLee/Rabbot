@@ -5,6 +5,20 @@
 #include "arm_math.h"
 #include <stdbool.h>
 #include "stm32g4Board.h"
+#include "PID.h"
+//namespace foc
+//{
+    
+typedef enum  
+{
+    POSITION,
+    VELOCITY,
+    TORQUE,
+    POSITION_VELOCITY,
+    OPEN
+
+}Mode;
+
 
 class FOCController
 {
@@ -14,11 +28,25 @@ private:
 
     EncoderBase *_encoder;
     DriverBase *_driver;
+    CurrentBase *_current;
+
     arm_pid_instance_f32 _pidPosition;
     arm_pid_instance_f32 _pidVelocity;
 
+    // arm_pid_instance_f32 _pidId;
+    // arm_pid_instance_f32 _pidIq;
+
+    Mode _mode = POSITION_VELOCITY;
     float _targetPosition = 100.0f;
     float _targetVelovity = 50.0f ;
+
+    float _targetIq = 0.4f;
+    float _targetId = 0.0f ;
+
+    float _uq = 0.0f;
+    float _ud = 0.0f;
+    float _q = 0.0f;
+    float _d = 0.0f;
 
     void clarkeTransformation(float Ia, float Ib, float* alpha, float* beta);
     void parkTransformation(float alpha, float beta, float theta, float* d, float* q);
@@ -28,7 +56,13 @@ private:
     void setPhaseVoltage(float Uq, float Ud, float angle_el);
 public:
 
-    FOCController(uint8_t pp, EncoderBase *encoder, DriverBase *driver);
+    
+   // PIDController<float> _pidPos;
+    PIDController<float> _pidIq;
+    PIDController<float> _pidId;
+
+
+    FOCController(uint8_t pp, EncoderBase *encoder, DriverBase *driver, CurrentBase *current);
     FOCController(uint8_t pp);
    // ~FOCController();
 
@@ -42,58 +76,11 @@ public:
 
     void setTargetPosition(float position);
     void setTargetVelocity(float velocity);
-
+    void setTargetIq(float iq);
     void loop(void);
-
+    void logLoop(void);
+    void TorqueLoop(void);
 
 };
 
-// FocController::FocController(/* args */)
-// {
-// }
 
-// FocController::~FocController()
-// {
-// }
-
-
-// #define rotor_phy_angle (encoder_angle - rotor_zero_angle) // 转子物理角度
-// #define rotor_logic_angle (rotor_phy_angle * POLE_PAIRS)   // 转子逻辑角度（电角度）
-
-// typedef enum
-// {
-//     control_type_null,                  // 不进行控制
-//     control_type_position,              // 位置控制
-//     control_type_speed,                 // 速度控制
-//     control_type_torque,                // 力矩控制
-//     control_type_speed_torque,          // 速度-力矩控制
-//     control_type_position_speed_torque, // 位置-速度-力矩控制
-// } motor_control_type;
-
-// typedef struct
-// {
-//     motor_control_type type;
-//     float position;        // 目标角度，单位rad
-//     float speed;           // 目标速度，单位rad/s
-//     float torque_norm_d;   // 目标d轴强度，0~1
-//     float torque_norm_q;   // 目标q轴强度，0~1
-//     float max_speed;       // 串级控制时的最大速度，单位rad/s
-//     float max_torque_norm; // 串级控制时的最大q轴力矩，0~1
-// } motor_control_context_t;
-
-// extern motor_control_context_t motor_control_context;
-
-// float cycle_diff(float diff, float cycle);
-// void foc_forward(float d, float q, float rotor_rad);
-
-// void lib_position_control(float rad);                                                           // 位置（角度）控制
-// void lib_speed_control(float speed);                                                            // 速度控制
-// void lib_torque_control(float torque_norm_d, float torque_norm_q);                              // 力矩（电流）控制
-// void lib_speed_torque_control(float speed, float max_torque_norm);                              // 速度-力矩控制
-// void lib_position_speed_torque_control(float position, float max_speed, float max_torque_norm); // 位置-速度-力矩控制
-
-// void set_motor_pid(
-//     float position_p, float position_i, float position_d,
-//     float speed_p, float speed_i, float speed_d,
-//     float torque_d_p, float torque_d_i, float torque_d_d,
-//     float torque_q_p, float torque_q_i, float torque_q_d);

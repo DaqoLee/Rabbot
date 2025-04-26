@@ -3,11 +3,13 @@
 #include "stm32g4xx_hal.h"
 #include "tim.h"
 #include "spi.h"
+#include "adc.h"
 #include <stdio.h>
 #include <string.h>
 #include "arm_math.h"
 #include "driver.h"
 #include "encoder.h"
+#include "current.h"
 
 #ifndef PI
 #define PI 3.14159265358979
@@ -99,6 +101,21 @@ class MT6835 : public EncoderBase
   uint8_t crc_table(const uint8_t *data, uint8_t len);
   
   };
-  
 
+
+  class Current : public CurrentBase
+  {
+    private:
+
+    public:
+    void init() override;
+    void getCurrent(float *Ia, float *Ib, float *Ic) override;
+    float getIa(void) override;
+    float getIb(void) override;
+    float getIc(void) override;
+    void update(uint32_t frequency ) override;
+ 
+  };
+  
+  
 

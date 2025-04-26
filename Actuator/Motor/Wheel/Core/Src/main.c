@@ -62,8 +62,16 @@ void SystemClock_Config(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
-  if (htim->Instance == TIM2) {  // ¼ÙÉèÊ¹ÓÃTIM2×÷Îª¿ØÖÆÖÜÆÚ¶¨Ê±Æ÷
+  if (htim->Instance == TIM2) {  // ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½TIM2ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½Ê±ï¿½ï¿½
     loop();
+  }
+}
+
+void HAL_ADCEx_InjectedConvCpltCallback(ADC_HandleTypeDef *hadc)
+{
+  if (hadc->Instance == ADC1)
+  {
+    torqueLoop();
   }
 }
 /* USER CODE END 0 */
@@ -106,11 +114,7 @@ int main(void)
   MX_SPI1_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-  HAL_ADCEx_InjectedStart(&hadc1);
-	__HAL_ADC_ENABLE_IT(&hadc1, ADC_IT_JEOC);
-  HAL_Delay(1000);
-  HAL_ADCEx_Calibration_Start(&hadc1, ADC_SINGLE_ENDED);//Ð£×¼
- 
+
 
   setup();
 
@@ -125,8 +129,8 @@ int main(void)
   {
 
 
-    // loop();
-    HAL_Delay(10);
+    logLoop();
+    HAL_Delay(1);
     // printf("test\r\n");
     //HAL_UART_Transmit(&huart1, data, 3, 100);
     /* USER CODE END WHILE */

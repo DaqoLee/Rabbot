@@ -24,6 +24,19 @@ SHELL_EXPORT_CMD_AGENCY(SHELL_CMD_TYPE(SHELL_TYPE_CMD_FUNC)|SHELL_CMD_DISABLE_RE
   set Position,
   SHELL_PARAM_FLOAT(p1));
 
+
+void setIq(float iq)
+{
+  motor.setTargetIq(iq);
+  logPrintln("iq: %f",iq);
+}
+
+SHELL_EXPORT_CMD_AGENCY(SHELL_CMD_TYPE(SHELL_TYPE_CMD_FUNC)|SHELL_CMD_DISABLE_RETURN,
+  setIq, 
+  setIq, 
+  set Iq,
+  SHELL_PARAM_FLOAT(p1));
+
   void setVelocity(float vel)
   {
     motor.setTargetVelocity(vel);

@@ -4,8 +4,9 @@
 
  DRV8317 driver;
  MT6835 encoder;
+ Current current;
 
- FOCController motor(7, &encoder, &driver);
+ FOCController motor(7, &encoder, &driver, &current);
 
 void setup(void)
 {
@@ -20,4 +21,18 @@ void loop(void)
   //motor.getMechAngle();
   //printf("angle: %f\r\n", motor.getMechAngle());
   //shellTask(&shell);
+  
+}
+
+void logLoop(void)
+{
+  motor.logLoop();
+  //motor.getMechAngle();
+  //printf("angle: %f\r\n", motor.getMechAngle());
+  //shellTask(&shell);
+}
+
+void torqueLoop(void)
+{
+  motor.TorqueLoop();
 }
