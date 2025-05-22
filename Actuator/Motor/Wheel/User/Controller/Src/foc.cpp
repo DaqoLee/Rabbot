@@ -3,26 +3,26 @@
 #include "shell.h"
 
 
-FOCController :: FOCController(uint8_t pp, EncoderBase *encoder, DriverBase *driver, CurrentBase *current):
-_pidIq(0, 0, 0,[this](){return this->_q;}, [this](float output){_uq = output;}),
-_pidId(0, 0, 0, [this](){return this->_d;}, [this](float output){_ud = output;})
+FOCController :: FOCController(uint8_t pp, EncoderBase *encoder, DriverBase *driver, CurrentBase *current)
 {
     _pp = pp;
     _encoder = encoder;
     _driver = driver;
     _current = current;
 
+   // _pidPos = new(PIDController<float>(0, 0, 0));
+
 
     // _encoder->init();
 }
 
-FOCController :: FOCController(uint8_t pp):
-_pidIq(0, 0, 0,[this](){return this->_q;}, [this](float output){_uq = output;}),
-_pidId(0, 0, 0, [this](){return this->_d;}, [this](float output){_ud = output;})
+FOCController :: FOCController(uint8_t pp)
 {
     _pp = pp;
     // _encoder->init();
 }
+
+
 #define _3PI_2 4.71238898038f
 void FOCController :: init(void)
 {
@@ -35,8 +35,8 @@ void FOCController :: init(void)
     _pidPosition.Kd = 0.2;
     arm_pid_init_f32(&_pidPosition, false);
 
-    _pidVelocity.Kp = 0.0015f;
-    _pidVelocity.Ki = 0.0001f;
+    _pidVelocity.Kp = 0.0010f;
+    _pidVelocity.Ki = 0.00002f;
     _pidVelocity.Kd = 0;
     arm_pid_init_f32(&_pidVelocity, false);
 
@@ -51,16 +51,16 @@ void FOCController :: init(void)
     // arm_pid_init_f32(&_pidId, false);
 
 
-    _pidIq.setPID(0.01, 0.0001, 0);
-    _pidIq.setOutputBounds(-0.5, 0.5);
-    _pidIq.setMaxIntegralCumulation(0.1);
+    _pidIq.setPID(0.5f, 0.015f, 0);
+    _pidIq.setOutputBounds(-0.3f, 0.3f);
+    _pidIq.setMaxIntegralCumulation(0.1f);
 
-    _pidId.setPID(0.01, 0.0001, 0);
-    _pidId.setOutputBounds(-0.5, 0.5);
-    _pidId.setMaxIntegralCumulation(0.1);
+    _pidId.setPID(0.5f, 0.015f, 0);
+    _pidId.setOutputBounds(-0.3f, 0.3f);
+    _pidId.setMaxIntegralCumulation(0.1f);
 
-    setPhaseVoltage(0, 0.8,0);
-    HAL_Delay(2000);
+     setPhaseVoltage(0, 0.1,0);
+    HAL_Delay(1000);
     while(_zeroElecAngle < 0.1)
     {
         _encoder->update(1000);
@@ -172,7 +172,7 @@ float PI_Update(PI_Controller* pi, float error, float dt) {
 void FOCController :: TorqueLoop(void)
 {
     float alpha= 0.0f, beta= 0.0f;
-    _current->update(20000);
+    //_current->update(20000);
     // clarkeTransformation(_current->getIa(),_current->getIb(),&alpha, &beta);
     // parkTransformation(alpha, beta, getElecAngle(), &_d, &_q);
     // _ud = PI_Update(&id_pi, (_targetId - _d), 0.00005f);
@@ -196,7 +196,7 @@ void  FOCController :: loop()
     static float tempIq = 0;
 
     _encoder->update(1000);
-    _current->update(20000);
+    _current->update(1000);
     
     ang = _encoder->getAngle();
     vel = _encoder->getVelocity();
@@ -230,11 +230,11 @@ void  FOCController :: loop()
         // uq = arm_pid_f32(&_pidIq,  _targetIq - q);
         // ud = arm_pid_f32(&_pidId,  _targetId - d);
 
-       _pidIq.tick(_q, _targetIq);
-       _pidId.tick(_d, _targetId);
+        _uq = _pidIq.tick(_q, _targetIq);
+        _ud = _pidId.tick(_d, _targetId);
 
-        _ud = PI_Update(&id_pi, (_targetId - _d), 0.001);
-        _uq = PI_Update(&iq_pi, (_targetIq - _q), 0.001);
+        // _ud = PI_Update(&id_pi, (_targetId - _d), 0.001);
+        // _uq = PI_Update(&iq_pi, (_targetIq - _q), 0.001);
 
         setPhaseVoltage(_uq, _ud, getElecAngle());
         break;
@@ -265,15 +265,35 @@ void  FOCController :: loop()
     }
 }
 
+extern uint16_t ADCdata[3];
+
+float temp_trans(uint16_t ADC_value)
+{
+   
+   float temp = 0;
+   float Rt=0;  
+   float R=3300; //
+   float T0=273.15+25;//
+   float B=3380; //Bֵ
+   float Ka=273.15; //Kֵ
+   float VR=0;//
+   VR=(float)(((float)ADC_value/4096)*3.0); //
+   Rt=(3.0-VR)*R/VR;//
+   temp=1/(1/T0+log(Rt/R)/B)-Ka+0.5; //
+   return temp;
+}
+
 void  FOCController :: logLoop()
 {
-    // float ia, ib, ic;
+    float ia, ib, ic;
 
-    // ia = _current->getIa();
-    // ib = _current->getIb();
-    // ic = _current->getIc();
+    ia = _current->getIa();
+    ib = _current->getIb();
+    ic = _current->getIc();
 
-    //printf("d=: %f, %f, %f \n",ia,ib,ic);
+    //  printf("%f %d\r\n",((float)ADCdata[0]/4096)*3.0*16,ADCdata[2]);
+
+    printf("d=: %f, %f, %f, %f, %f, %f \n",ia,ib,ic,temp_trans(ADCdata[1]),((float)ADCdata[0]/4096)*3.0*16, _encoder->getVelocity());
 }
 
 template class PIDController<float>;

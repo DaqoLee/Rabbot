@@ -36,11 +36,11 @@ private:
     // arm_pid_instance_f32 _pidId;
     // arm_pid_instance_f32 _pidIq;
 
-    Mode _mode = POSITION_VELOCITY;
+    Mode _mode = VELOCITY;
     float _targetPosition = 100.0f;
-    float _targetVelovity = 50.0f ;
+    float _targetVelovity = 100.0f ;
 
-    float _targetIq = 0.4f;
+    float _targetIq = 0.08f;
     float _targetId = 0.0f ;
 
     float _uq = 0.0f;
@@ -60,7 +60,6 @@ public:
    // PIDController<float> _pidPos;
     PIDController<float> _pidIq;
     PIDController<float> _pidId;
-
 
     FOCController(uint8_t pp, EncoderBase *encoder, DriverBase *driver, CurrentBase *current);
     FOCController(uint8_t pp);

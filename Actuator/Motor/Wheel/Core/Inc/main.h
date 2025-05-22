@@ -57,10 +57,14 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define FAULT_Pin GPIO_PIN_11
-#define FAULT_GPIO_Port GPIOB
+#define FAULT_Pin GPIO_PIN_15
+#define FAULT_GPIO_Port GPIOA
+#define SLEEP_Pin GPIO_PIN_10
+#define SLEEP_GPIO_Port GPIOC
 #define SPI1_CS_Pin GPIO_PIN_11
 #define SPI1_CS_GPIO_Port GPIOC
+#define KEY1_Pin GPIO_PIN_8
+#define KEY1_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

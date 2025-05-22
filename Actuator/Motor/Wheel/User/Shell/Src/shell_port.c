@@ -58,4 +58,4 @@ void userShellInit(void)
 }
 
 
-//CEVENT_EXPORT(EVENT_INIT_STAGE2, userShellInit);
+CEVENT_EXPORT(EVENT_INIT_STAGE2, userShellInit);

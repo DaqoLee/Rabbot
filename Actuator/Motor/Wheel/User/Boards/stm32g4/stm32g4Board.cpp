@@ -8,7 +8,7 @@ DRV8317 :: DRV8317()
 void DRV8317 :: init(void)
 {
   HAL_Delay(2000);
-  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(SLEEP_GPIO_Port, SLEEP_Pin, GPIO_PIN_SET);
   HAL_Delay(1000);
   
   HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
@@ -151,9 +151,9 @@ void Current::init()
 {
  // HAL_ADCEx_InjectedStart_IT(&hadc1);
   HAL_ADCEx_InjectedStart(&hadc1);
-	// __HAL_ADC_ENABLE_IT(&hadc1, ADC_IT_JEOC);
+	__HAL_ADC_ENABLE_IT(&hadc1, ADC_IT_JEOC);
   HAL_Delay(100);
-  HAL_ADCEx_Calibration_Start(&hadc1, ADC_SINGLE_ENDED);//У׼
+  // HAL_ADCEx_Calibration_Start(&hadc1, ADC_SINGLE_ENDED);//У׼
  
 }
 void Current::getCurrent(float *Ia, float *Ib, float *Ic) 

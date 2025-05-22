@@ -70,11 +70,3 @@ SHELL_EXPORT_CMD(SHELL_CMD_PERMISSION(0)|SHELL_CMD_TYPE(SHELL_TYPE_CMD_FUNC)|SHE
    getVelocity, 
    get Velocity);
  
-//  void test(int a, float b, int c, float d)
-// {
-//     printf("a = %d, b = %f, c = %d, d = %f \r\n", a, b, c, d);
-// }
-
-// SHELL_EXPORT_CMD_AGENCY(SHELL_CMD_TYPE(SHELL_TYPE_CMD_FUNC),
-// test, test, test float param,
-// p1, SHELL_PARAM_FLOAT(p2), p3, SHELL_PARAM_FLOAT(p4));
