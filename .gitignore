@@ -15,3 +15,4 @@ Actuator/Motor/Wheel/*.bin
 Actuator/Motor/Wheel/*.hex
 Actuator/Motor/Wheel/*.json
 Actuator/Motor/Wheel/.mxproject
+Actuator/Motor/Wheel/*.ninja

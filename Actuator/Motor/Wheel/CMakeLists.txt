@@ -55,6 +55,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     User/Devices/Src/current.cpp
     User/Devices/Src/driver.cpp
     User/Devices/Src/encoder.cpp
+     User/Devices/Src/button.cpp
     User/Devices/Src/temperature.cpp
     User/Boards/stm32g4/stm32g4Board.cpp
     User/Application/Src/user.cpp
