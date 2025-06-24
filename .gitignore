@@ -1,0 +1,17 @@
+# CMake 构建产物
+
+3D/
+
+Actuator/Motor/Wheel/build/
+Actuator/Motor/Wheel/CMakeFiles/
+Actuator/Motor/Wheel/CMakeCache.txt
+Actuator/Motor/Wheel/cmake_install.cmake
+Actuator/Motor/Wheel/Makefile
+Actuator/Motor/Wheel/.vscode
+
+# 编译输出
+Actuator/Motor/Wheel/*.elf
+Actuator/Motor/Wheel/*.bin
+Actuator/Motor/Wheel/*.hex
+Actuator/Motor/Wheel/*.json
+Actuator/Motor/Wheel/.mxproject
