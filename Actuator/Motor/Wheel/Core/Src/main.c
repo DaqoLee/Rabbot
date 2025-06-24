@@ -235,7 +235,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    // logLoop();
+    logLoop();
     HAL_ADC_Start_DMA(&hadc1,(uint32_t*)ADCdata,3);
     HSVtoRGB(120, 255, v, &r, &g, &b);
     ws2812_set_RGB(r/2, g/2, b/2, 0);

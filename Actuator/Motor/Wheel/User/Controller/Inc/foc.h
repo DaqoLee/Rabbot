@@ -61,6 +61,10 @@ public:
     PIDController<float> _pidIq;
     PIDController<float> _pidId;
 
+    PIDController<float> _pidPos;
+    PIDController<float> _pidVel;
+
+
     FOCController(uint8_t pp, EncoderBase *encoder, DriverBase *driver, CurrentBase *current);
     FOCController(uint8_t pp);
    // ~FOCController();

@@ -26,7 +26,11 @@ void loop(void)
 
 void logLoop(void)
 {
-  motor.logLoop();
+  // motor.logLoop();
+  motor.setTargetVelocity(120);
+  HAL_Delay(100);
+  motor.setTargetVelocity(-120);
+  HAL_Delay(100);
   //motor.getMechAngle();
   //printf("angle: %f\r\n", motor.getMechAngle());
   //shellTask(&shell);

@@ -35,7 +35,7 @@ void FOCController :: init(void)
     _pidPosition.Kd = 0.2;
     arm_pid_init_f32(&_pidPosition, false);
 
-    _pidVelocity.Kp = 0.0010f;
+    _pidVelocity.Kp = 0.0002f;
     _pidVelocity.Ki = 0.00002f;
     _pidVelocity.Kd = 0;
     arm_pid_init_f32(&_pidVelocity, false);
@@ -59,7 +59,15 @@ void FOCController :: init(void)
     _pidId.setOutputBounds(-0.3f, 0.3f);
     _pidId.setMaxIntegralCumulation(0.1f);
 
-     setPhaseVoltage(0, 0.1,0);
+    _pidPos.setPID(1.5f, 0.0f, 0.2f);
+    _pidPos.setOutputBounds(-1000.0f, 1000.0f);
+    _pidPos.setMaxIntegralCumulation(10.0f);  
+
+    _pidVel.setPID(0.0002f, 0.0002f, 0.0f);
+    _pidVel.setOutputBounds(-0.3f, 0.3f);
+    _pidVel.setMaxIntegralCumulation(500.0f);  
+
+    setPhaseVoltage(0, 0.1,0);
     HAL_Delay(1000);
     while(_zeroElecAngle < 0.1)
     {
@@ -220,7 +228,8 @@ void  FOCController :: loop()
         break;
     case Mode::VELOCITY:
 
-        _uq =  arm_pid_f32(&_pidVelocity,  _targetVelovity - vel );
+       // _uq =  arm_pid_f32(&_pidVelocity,  _targetVelovity - vel );
+        _uq = _pidVel.tick(vel, _targetVelovity);
         setPhaseVoltage(_uq, _ud, getElecAngle());
         break;   
     case Mode::TORQUE:
@@ -293,7 +302,7 @@ void  FOCController :: logLoop()
 
     //  printf("%f %d\r\n",((float)ADCdata[0]/4096)*3.0*16,ADCdata[2]);
 
-    printf("d=: %f, %f, %f, %f, %f, %f \n",ia,ib,ic,temp_trans(ADCdata[1]),((float)ADCdata[0]/4096)*3.0*16, _encoder->getVelocity());
+    printf("d=: %f, %f, %f, %f, %f, %f \n",ia,ib,ic,temp_trans(ADCdata[1]),_uq, _encoder->getVelocity());
 }
 
 template class PIDController<float>;
